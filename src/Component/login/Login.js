@@ -26,7 +26,7 @@ const Login = () => {
       console.log("called the submit function");
       setLoading(true);
       const response = await axios.post(
-        "https://vega-rlo9h50iq-shakir-ansaris-projects.vercel.app/api/v1/user/login",
+        "https://vega-backend-six.vercel.app/api/v1/user/login",
         formData
       );
       localStorage.setItem("user", JSON.stringify(response.data.data));
@@ -53,7 +53,11 @@ const Login = () => {
             <div class="row justify-content-center">
               <div class="col-lg-6 ">
                 <div class="loginlogo">
-                  <img src='https://vega6.com/assets/images/vega-6-logo.png' class="img-fluid" alt="" />
+                  <img
+                    src="https://vega6.com/assets/images/vega-6-logo.png"
+                    class="img-fluid"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>

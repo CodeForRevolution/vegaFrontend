@@ -24,7 +24,7 @@ const Home = () => {
     async function fetchData() {
       try {
         var blogResponse = await axios.get(
-          "https://vega-rlo9h50iq-shakir-ansaris-projects.vercel.app/api/v1/blog/getAll"
+          "https://vega-backend-six.vercel.app/api/v1/blog/getAll"
         );
         dispatch(addBulkBlogs(blogResponse.data.data));
       } catch (error) {

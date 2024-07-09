@@ -31,7 +31,7 @@ const Blog = () => {
     setLoading(true);
     try {
       const deleted = await axios.delete(
-        `https://vega-rlo9h50iq-shakir-ansaris-projects.vercel.app/api/v1/blog/delete/${id}`
+        `https://vega-backend-six.vercel.app/api/v1/blog/delete/${id}`
       );
       dispatch(removeBlogs(id));
     } catch (error) {

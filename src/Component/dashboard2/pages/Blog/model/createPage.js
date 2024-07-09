@@ -54,7 +54,7 @@ console.log("your props",props)
       async function getData() {
         try {
           const response = await axios.get(
-            `https://vega-rlo9h50iq-shakir-ansaris-projects.vercel.app/api/v1/blog/getById/${id}`
+            `https://vega-backend-six.vercel.app/api/v1/blog/getById/${id}`
           );
 
           setFormData({...response.data.data})
@@ -101,7 +101,7 @@ console.log("your props",props)
      
       if (!isUpdate) {
         const response = await axios.post(
-          `https://vega-rlo9h50iq-shakir-ansaris-projects.vercel.app/api/v1/blog/new`,
+          `https://vega-backend-six.vercel.app/api/v1/blog/new`,
           formDataToSubmit
         );
         console.log("send the data to server for creation",formDataToSubmit)
@@ -110,7 +110,7 @@ console.log("your props",props)
 
         console.log("what you are updating",formDataToSubmit);
         const response = await axios.put(
-          `https://vega-rlo9h50iq-shakir-ansaris-projects.vercel.app/api/v1/blog/update/${id}`,
+          `https://vega-backend-six.vercel.app/api/v1/blog/update/${id}`,
           formDataToSubmit
         );
 
